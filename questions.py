@@ -1,0 +1,22 @@
+questions = [
+    "How do you feel about today?",
+    "Describe your current mood in one sentence.",
+    "What is something that made you happy recently?",
+    "Do you feel stressed or relaxed right now?",
+    "Are you looking forward to anything exciting?",
+    "How was your last conversation with a friend?",
+    "Do you feel motivated today? Why or why not?",
+    "What’s one word to describe your current emotions?",
+    "How do you usually unwind after a long day?",
+    "Did anything upset you recently?",
+    "Do you feel more energetic or tired today?",
+    "Have you been laughing a lot recently?",
+    "Are you feeling lonely or connected to others?",
+    "Do you feel optimistic about the future?",
+    "Is there something worrying you at the moment?",
+    "What’s your comfort activity when feeling down?",
+    "Did you have a productive day?",
+    "Are you feeling hopeful or discouraged?",
+    "How do you usually handle bad days?",
+    "Have you had a good night's sleep lately?"
+]

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mood-Based Book Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood-Based Book Recommender 📚</h1>
+        
+        <form method="POST" action="/quiz">
+            {% for question in questions %}
+                <label for="response{{ loop.index0 }}">{{ question }}</label>
+                <textarea name="response{{ loop.index0 }}" id="response{{ loop.index0 }}" required></textarea>
+            {% endfor %}
+            <button type="submit">Get Recommendations</button>
+        </form>
+    </div>
+</body>
+</html>

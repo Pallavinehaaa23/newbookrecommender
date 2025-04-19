@@ -1,0 +1,28 @@
+<!-- templates/results.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Your Book Recommendations</h1>
+        <h2>Your Mood: {{ recommendations.mood }}</h2>
+        <h3>Suggested Genre: {{ recommendations.genre }}</h3>
+
+        <div class="book-list">
+            {% for book in recommendations.books %}
+                <div class="book-card">
+                    <img src="{{ book[2] }}" alt="Book Cover" />
+                    <h4>{{ book[0] }}</h4>
+                    <p>by {{ book[1] }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <a href="{{ url_for('home') }}">🔁 Try Again</a>
+    </div>
+</body>
+</html>
